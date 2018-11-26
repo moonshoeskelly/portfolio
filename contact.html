@@ -3,8 +3,8 @@
   <head>
     <title>Clever Kelly</title>
 
-    <!-- FAVIcon -->
-      <link rel="shortcut icon" href="images/mario-icon.ico" type="image.ico">
+    <!-- FAVIcon
+      <link rel="shortcut icon" href="images/mario-icon.ico" type="image.ico"> -->
 
       <!-- CSS -->
       <link href="style/style.css" rel="stylesheet" type="text/css" />
@@ -13,16 +13,16 @@
       <!-- Google Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Monserrat|Grand+Hotel" rel="stylesheet">
 
-      <!-- Scripts -->
+      <!-- Scripts
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="scripts/script.js" type="text/javascript"></script>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /> -->
 
   </head>
 
   <body>
     <header>
-      <!-- image logo goes here -->
+      <img class="logo" src="images/contact-nano.svg" alt="Contact Logo" title="Contact Logo" />
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -34,11 +34,43 @@
       </nav>
     </header>
 
+    <main>
+
+      <div class="container">
+        <section class="contact-section" id="contact-us">
+        <h1>Email Me</h1>
+          <form class="kelly-contact" id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
+
+            <div class="name">
+              <label for="name" class="label_input_wrap"></label>
+              <input type="text" name="req_name" placeholder="Your Name" id="name" />
+            </div>
+
+            <div class="email">
+              <label for="email" class="label_input_wrap"></label>
+              <input type="email" name="req_email" placeholder="Your Email" id="email" />
+            </div>
+
+            <div class="subject">
+              <label for="subject" class="label_input_wrap"></label>
+              <input type="subject" name="subject" placeholder="Message Subject" id="subject" />
+            </div>
+
+            <div class="comments">
+              <label for="comments" class="label_input_wrap"></label>
+              <textarea name="comments" maxlength="1000" cols="55" rows="15" placeholder="Type Message Here" id="comments"></textarea>
+            </div>
+
+            <div class="submit">
+              <input type="submit" value="Send">
+            </div>
+          </form>
+
     <footer>
       <div class="socialmedia">
-        <a href="https://twitter.com/NintendoAmerica" target="_blank"><img src="images/twitter.png" alt="twitter" title="twitter" /></a>
-        <a href="https://www.facebook.com/MarioKartEN/" target="_blank"><img src="images/facebook.png" alt="facebook" title="facebook" /></a>
-        <a href="https://www.instagram.com/nintendo/?hl=en" target="_blank"><img src="images/instagram.png" alt="instagram" title="instagram" /></a>
+        <a href="mailto: dement.kelly@gmail.com" target="blank">Contact Me</a>
+          <a href="https://www.linkedin.com/kelly" target="_blank"><img src="images/linkedin-logo.png" alt="linkedin" title="linkedin" /></a>
+        <a href="https://twitter.com/moonshoeskelly" target="_blank"><img src="images/twitter-rounded.png" alt="twitter" title="twitter" /></a>
       </div>
     </footer>
     <script src="lightbox/src/js/lightbox.js"></script>
