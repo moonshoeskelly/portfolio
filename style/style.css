@@ -2,10 +2,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  background-image: url("../images/background.png");
-  background-color: #FFCCCC;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 /*#######################################
@@ -16,10 +12,15 @@
 *
 *#######################################*/
 
+body {
+  background-image: url("../images/background.png");
+  background-color: #FFCCCC;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 .logo {
   width: 600px;
-
 }
 
 /*#######################################
@@ -57,10 +58,15 @@ header {
   position: fixed;
   z-index: 99;
   margin: 0 auto;
+  top: 0;
   left: 0;
   right: 0;
   max-width: 600px;
   padding: 10px 100px;
+  background-image: url("../images/background.png");
+  background-color: #FFCCCC;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 header nav ul {
@@ -159,8 +165,90 @@ h1 {
 *
 *#######################################*/
 
+.gallery {
+  text-align: center;
+}
+
 .gallery img {
   height: 295px;
+  margin: 10px;
+  border: 3px solid #CC9933;
+}
+
+span.lb-caption {
+  font-size: 16px !important;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*#######################################
+*
+*
+*             Resume
+*
+*
+*#######################################*/
+
+.experience {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.star {
+  height: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+  font-family: "Monserrat", sans-serif;
+}
+
+/*#######################################
+*
+*
+*             Contact
+*
+*
+*#######################################*/
+
+.contact-section {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.kelly-contact div {
+  margin: 10px;
+  display: inline-block;
+}
+
+.label_input_wrap {
+  vertical-align: top;
+  display: block;
+}
+
+.kelly-contact input,
+.kelly-contact textarea {
+  border: 3px solid #CC9933;
+  padding: 9px 11px;
+  font-size: 14px;
+}
+
+.submit input {
+  background: #CC9933;
+  color: white;
+  font-family: 'Monserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 30px;
 }
 
 /*#######################################
