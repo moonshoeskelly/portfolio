@@ -16,6 +16,7 @@ body {
 
 .logo {
   width: 500px;
+  padding-bottom: 20px;
 }
 
 h1 {
@@ -120,7 +121,8 @@ footer img{
 </header>
 
 <div class="container">
-  <p>Thanks for your interest. I have received your message, and will be in touch shortly.</p>
+  <h1>Thanks for your interest</h1>
+  <p>I have received your message, and will be in touch shortly.</p>
 </div>
 
 <footer>
