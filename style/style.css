@@ -20,7 +20,7 @@ body {
 }
 
 .logo {
-  width: 600px;
+  width: 500px;
 }
 
 /*#######################################
@@ -67,6 +67,7 @@ header {
   background-color: #FFCCCC;
   background-attachment: fixed;
   background-size: cover;
+  text-align: center;
 }
 
 header nav ul {
@@ -97,7 +98,7 @@ header nav a {
 
 .container {
   position: relative;
-  top: 315px;
+  top: 265px;
   margin: 0 auto;
   max-width: 700px;
 }
@@ -261,8 +262,9 @@ ul li {
 
 footer {
   text-align: right;
-  position: relative;
-  top: 325px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
   padding: 10px 20px 10px 0;
 }
 
