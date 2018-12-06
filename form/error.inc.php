@@ -107,7 +107,7 @@ footer img{
 </style>
 
 <header>
-  <img class="logo" src="..images/cklogo-rect.svg" alt="Home Logo" title="Clever Kelly Logo" />
+  <img class="logo" src="images/cklogo-rect.svg" alt="Home Logo" title="Clever Kelly Logo" />
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -119,7 +119,7 @@ footer img{
   </nav>
 </header>
 
-<div class="container"
+<div class="container">
 	<h1>Missing fields</h1>
 	<p>Sorry, you have not completed all of the required fields.</p>
 	<p>Please hit <a href="#" onClick="history.go(-1)">back</a> and complete the following required fields.</p>
@@ -138,7 +138,7 @@ footer img{
 <footer>
   <div class="socialmedia">
     <a class="contact-footer" href="contact.html" target="_blank">Contact Me</a>
-      <a href="https://www.linkedin.com/in/kelly-dement-88996748/" target="_blank"><img src="../images/linkedin-logo.png" alt="linkedin" title="linkedin" /></a>
-    <a href="https://twitter.com/moonshoeskelly" target="_blank"><img src="../images/twitter-rounded.png" alt="twitter" title="twitter" /></a>
+      <a href="https://www.linkedin.com/in/kelly-dement-88996748/" target="_blank"><img src="images/linkedin-logo.png" alt="linkedin" title="linkedin" /></a>
+    <a href="https://twitter.com/moonshoeskelly" target="_blank"><img src="images/twitter-rounded.png" alt="twitter" title="twitter" /></a>
   </div>
 </footer>

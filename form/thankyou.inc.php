@@ -107,7 +107,7 @@ footer img{
 </style>
 
 <header>
-  <img class="logo" src="..images/thank-you.png" alt="Thank You Logo" title="Thank You Logo" />
+  <img class="logo" src="images/thank-you.png" alt="Thank You Logo" title="Thank You Logo" />
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -126,7 +126,7 @@ footer img{
 <footer>
   <div class="socialmedia">
     <a class="contact-footer" href="contact.html" target="_blank">Contact Me</a>
-      <a href="https://www.linkedin.com/in/kelly-dement-88996748/" target="_blank"><img src="../images/linkedin-logo.png" alt="linkedin" title="linkedin" /></a>
-    <a href="https://twitter.com/moonshoeskelly" target="_blank"><img src="../images/twitter-rounded.png" alt="twitter" title="twitter" /></a>
+      <a href="https://www.linkedin.com/in/kelly-dement-88996748/" target="_blank"><img src="images/linkedin-logo.png" alt="linkedin" title="linkedin" /></a>
+    <a href="https://twitter.com/moonshoeskelly" target="_blank"><img src="images/twitter-rounded.png" alt="twitter" title="twitter" /></a>
   </div>
 </footer>
