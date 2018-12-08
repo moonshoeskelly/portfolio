@@ -153,17 +153,25 @@ p::first-line {
 *
 *#######################################*/
 
+aside {
+  height: 500px;
+  width: 230px;
+  position: relative;
+  float: left;
+}
 .college-logo1 {
   height: 150px;
-  position: absolute;
+  position: relative;
+  float: left;
   top: 400px;
   left: 40px;
 }
 
 .college-logo2 {
-  height: 125px;
-  position: absolute;
-  top: 560px;
+  height: 120px;
+  position: relative;
+  float: left;
+  top: 430px;
   left: 20px;
 }
 
@@ -172,6 +180,14 @@ p::first-line {
   float: right;
   margin: 4px 0px 4px 20px;
   border: 3px solid #CC9933;
+}
+
+.dog-video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  overflow: hidden;
 }
 
 /*#######################################
