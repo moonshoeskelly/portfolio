@@ -67,6 +67,19 @@ header nav a {
   margin: 0 20px;
 }
 
+header ul li a:hover {
+  color: #333;
+  font-weight: bold;
+  border: 2px solid #333;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+  -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+}
+
+a:visited {
+  color: #707070;
+}
+
 .container {
   position: relative;
   top: 265px;
@@ -79,6 +92,14 @@ h1 {
   color: #CC9933;
   margin: 10px 0 20px;
   font-size: 40px;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+article::first-line {
+  font-weight: bold;
 }
 
 footer {
@@ -99,6 +120,15 @@ footer {
   font-weight: bold;
   font-size: 17px;
   font-family: 'Monsterrat', sans-serif;
+}
+
+.contact-footer:hover {
+  color: #333;
+  font-weight: bold;
+  border: 2px solid #333;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+  -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
 }
 
 footer img{

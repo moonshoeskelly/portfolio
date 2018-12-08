@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130627098-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130627098-1');
+    </script>
+
     <title>Clever Kelly</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="web designer contact form" />
+    <meta name="description" content="Contact web designer Kelly DeMent" />
 
-    <!-- FAVIcon
-      <link rel="shortcut icon" href="images/mario-icon.ico" type="image.ico"> -->
+    <!-- FAVIcon-->
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
-      <!-- CSS -->
-      <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <!-- CSS -->
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
 
-      <!-- Google Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Monserrat|Grand+Hotel" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Monserrat|Grand+Hotel" rel="stylesheet">
 
-      <!-- Scripts
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="scripts/script.js" type="text/javascript"></script>
-    <meta charset="utf-8" /> -->
+    <!-- Scripts
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/script.js" type="text/javascript"></script>
+    -->
 
   </head>
 
@@ -38,7 +53,7 @@
       <div class="container">
         <section class="contact-section" id="contact-us">
           <h1>Email Me</h1>
-
+          <img id="letter" src="images/letter.png" alt="letter" title="letter" />
           <form class="kelly-contact" id="test_form" name="test_form" method="post" action="form.php" onsubmit="return validateForm(this)">
 
             <div class="name">
@@ -50,7 +65,6 @@
               <label for="email" class="label_input_wrap"></label>
               <input type="email" name="req_email" placeholder="Your Email" id="email" />
             </div>
-            <br />
 
             <div class="subject">
               <label for="subject" class="label_input_wrap"></label>
@@ -70,7 +84,7 @@
         </section>
       </div>
     </main>
-    
+
     <footer>
       <div class="socialmedia">
         <a class="contact-footer" href="contact.html" target="_blank">Contact Me</a>
