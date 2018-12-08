@@ -97,10 +97,6 @@ p::first-line {
   font-weight: bold;
 }
 
-article::first-line {
-  font-weight: bold;
-}
-
 footer {
   text-align: right;
   position: fixed;

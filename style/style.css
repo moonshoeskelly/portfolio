@@ -130,10 +130,6 @@ p::first-line {
   font-weight: bold;
 }
 
-article::first-line {
-  font-weight: bold;
-}
-
 /*#######################################
 *
 *
