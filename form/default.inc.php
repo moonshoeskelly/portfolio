@@ -133,7 +133,7 @@ footer img{
 </style>
 
 <header>
-  <img class="logo" src="images/cklogo-rect.svg" alt="Home Logo" title="Clever Kelly Logo" />
+  <img class="logo" src="images/cklogo-rect2.svg" alt="Home Logo" title="Clever Kelly Logo" />
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
