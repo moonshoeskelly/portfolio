@@ -175,10 +175,13 @@ p::first-line {
 *
 *#######################################*/
 
+.homephoto {
+  text-align: center;
+}
+
 #homekelly {
   width: 90%;
   max-width: 300px;
-  float: left;
   margin: 4px 1%;
   border: 3px solid #CC9933;
 }
@@ -186,6 +189,12 @@ p::first-line {
 .homeintro {
   float: right;
   font-size: .95rem;
+}
+
+figcaption {
+  text-align: center;
+  font-size: .85rem;
+  font-family: 'Monsterrat', sans-serif;
 }
 
 /*#######################################
@@ -498,6 +507,10 @@ header img {
 
     h1 {
       text-align: left;
+    }
+
+    .homephoto {
+      float: left;
     }
 
     #homekelly {
