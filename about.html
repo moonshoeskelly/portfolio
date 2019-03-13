@@ -27,8 +27,9 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Monserrat%7CGrand+Hotel" rel="stylesheet">
 
-    <!-- Scripts
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Scripts
     <script src="scripts/script.js" type="text/javascript"></script>
     -->
 
@@ -37,7 +38,21 @@
   <body>
     <header>
       <img class="logo" src="images/about2.svg" alt="About Logo" title="About Logo" />
-      <nav>
+
+      <button class="hamburger">&#9776;</button>
+		  <button class="cross">&#735;</button>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="desktop-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
@@ -48,26 +63,19 @@
       </nav>
     </header>
 
-    <main>
-      <aside class="college">
-        <img class="college-logo1" src="images/knightro-logo.png" alt="UCF Logo" title="UCF Logo" />
-        <img class="college-logo2" src="images/gators-logo.png" alt="UF Logo" title="UF Logo" />
-      </aside>
-      <div class="container">
+    <main class="about-main">
+      <div class="container2">
         <br />
         <h1>This is Me</h1>
         <img class="about-photo" src="images/kellyface.jpeg" alt="Photo of Kelly" title="Photo of Kelly" />
-        <p>I grew up in the San Francisco suburb of Burlingame. I played on my family's computer quite a bit growing up (despite the mind-numbing dial up noise every time I wanted to log on to AOL...). My college years took me to the east coast. First to Boston, and then to Florida. After graduation I began working seasonally in Alaska as a tour guide. I move around quite a bit, but I always have my computer. It is now a much better upgrade than what my family had growing up, although I am still not convinced that this touchbar is living up to it's hype. Nowadays, I play when I can, work when I must, and watch as much Netflix as my eyes allow. I'm basically just living a life of limbo while I wait for the final seasons of Game of Thrones to return.</p>
-        <br /><br />
-        <p>Just for the record. I love dogs too.</p>
-        <video class="dog-video" width="500" autoplay loop muted controls>
-          <source src="videos/Puppiness.mp4" type="video/mp4" />
-          <source src="videos/Puppiness.ogv" type="video/ogv" />
-          <source src="videos/Puppiness.webm" type="video/webm" />
-          Your browser does not support HTML5 video
-        </video>
+        <p class="aboutme">I grew up in the San Francisco suburb of Burlingame. I played on my family's computer quite a bit growing up (despite the mind-numbing dial up noise every time I wanted to log on to AOL...). My college years took me to the east coast. First to Boston, and then to Florida. After graduation I began working seasonally in Alaska as a tour guide. I move around quite a bit, but I always have my computer. It is now a much better upgrade than what my family had growing up, although I am still not convinced that this touchbar is living up to it's hype. Nowadays, I play when I can, work when I must, and watch as much Netflix as my eyes allow. I'm basically just living a life of limbo while I wait for the final seasons of Game of Thrones to return.</p>
       </div>
     </main>
+
+    <aside class="about-college">
+      <img class="college-logo1" src="images/knightro-logo.png" alt="UCF Logo" title="UCF Logo" />
+      <img class="college-logo2" src="images/gators-logo.png" alt="UF Logo" title="UF Logo" />
+    </aside>
 
     <footer>
       <div class="socialmedia">
@@ -76,5 +84,6 @@
         <a href="https://twitter.com/moonshoeskelly" target="_blank"><img src="images/twitter-rounded.png" alt="twitter" title="twitter" /></a>
       </div>
     </footer>
+    <script src="scripts/hamburger.js"></script>
   </body>
 </html>

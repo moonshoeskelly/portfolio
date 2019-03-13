@@ -30,6 +30,9 @@
     <link href="https://fonts.googleapis.com/css?family=Monserrat%7CGrand+Hotel" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <!-- Scripts
     <script src="scripts/script.js" type="text/javascript"></script>
     -->
@@ -39,7 +42,11 @@
   <body>
     <header>
       <img class="logo" src="images/work-nano2.svg" alt="Work Logo" title="Work Logo" />
-      <nav>
+
+      <button class="hamburger">&#9776;</button>
+		  <button class="cross">&#735;</button>
+
+      <nav class="menu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
@@ -48,6 +55,17 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
     </header>
 
     <main>
@@ -111,5 +129,6 @@
       </div>
     </footer>
     <script src="lightbox/src/js/lightbox.js"></script>
+    <script src="scripts/hamburger.js"></script>
   </body>
 </html>

@@ -19,9 +19,47 @@ body {
   background-size: cover;
 }
 
-.logo {
-  width: 500px;
+header img {
+  min-width: 200px;
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
 }
+
+/*************HAMBURGER MENU STYLES *******************/
+.hamburger{
+  background:none;
+  line-height:45px;
+  color:#CC9933;
+  border:0;
+  font-size:2em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  color:#CC9933;
+  border:0;
+  font-size:4em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:10px 0 10px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover{display: block; background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a{text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+
+/***************END HAMBURGER MENU STYLES *****************/
+
 
 /*#######################################
 *
@@ -42,7 +80,7 @@ h5,
 h6,
 p {
   font-family: 'Montserrat', sans-serif;
-  margin: 15px 0px;
+  margin: 10px 1%;
   line-height: 25px;
 }
 
@@ -62,7 +100,7 @@ header {
   left: 0;
   right: 0;
   max-width: 600px;
-  padding: 10px 100px;
+  padding: 10px 4.167%;
   background-image: url("../images/background.png");
   background-color: #FFCCCC;
   background-attachment: fixed;
@@ -82,7 +120,7 @@ header nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: 'Monsterrat', sans-serif;
   margin: 0 20px;
 }
@@ -93,16 +131,15 @@ header ul li a {
 header ul li a:hover {
   color: #333;
   font-weight: bold;
-  border: 2px solid #333;
-  box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
-  -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
-  -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
 }
 
 a:visited {
   color: #707070;
 }
 
+.desktop-menu {
+	display: none;
+}
 /*#######################################
 *
 *
@@ -114,16 +151,16 @@ a:visited {
 
 .container {
   position: relative;
-  top: 265px;
-  margin: 0 auto;
-  max-width: 700px;
+    padding-top: 55%;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 h1 {
-  text-align: left;
+  text-align: center;
   color: #CC9933;
-  margin: 10px 0 20px;
-  font-size: 40px;
+  margin: 10px 2%;
+  font-size: 2.3rem;
 }
 
 p::first-line {
@@ -139,10 +176,16 @@ p::first-line {
 *#######################################*/
 
 #homekelly {
-  width: 300px;
+  width: 90%;
+  max-width: 300px;
   float: left;
-  margin: 4px 20px 4px 0px;
+  margin: 4px 1%;
   border: 3px solid #CC9933;
+}
+
+.homeintro {
+  float: right;
+  font-size: .95rem;
 }
 
 /*#######################################
@@ -154,31 +197,30 @@ p::first-line {
 *#######################################*/
 
 aside {
-  height: 500px;
-  width: 230px;
-  position: relative;
-  float: left;
+  text-align: center;
 }
-.college-logo1 {
-  height: 150px;
+
+.container2 {
   position: relative;
-  float: left;
-  top: 400px;
-  left: 40px;
+  padding-top: 55%;
+  max-width: 700px;
+}
+
+.college-logo1 {
+  max-width: 150px;
+  width: 40%;
 }
 
 .college-logo2 {
-  height: 120px;
-  position: relative;
-  float: left;
-  top: 430px;
-  left: 20px;
+  max-width: 150px;
+  width: 40%;
+  padding-bottom: 3%;
 }
 
 .about-photo {
-  width: 300px;
-  float: right;
-  margin: 4px 0px 4px 20px;
+  width: 90%;
+  max-width: 250px;
+  margin: 4px 1% 4px 2%;
   border: 3px solid #CC9933;
 }
 
@@ -192,7 +234,7 @@ aside {
 
 .disclaimer {
   font-family: 'Montserrat', sans-serif;
-  margin: 15px 0px;
+  margin: 15px 0;
   line-height: 25px;
 }
 .gallery {
@@ -201,19 +243,19 @@ aside {
 
 .gallery img {
   height: 295px;
-  margin: 10px;
+  margin: 10px 1%;
   border: 3px solid #CC9933;
 }
 
 span.lb-caption {
-  font-size: 16px !important;
+  font-size: 1rem !important;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
 
 .gallery img:hover {
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
@@ -221,14 +263,14 @@ span.lb-caption {
 /*#######################################
 *
 *
-*             Resume
+*             Resume *NOT RESPONSIVE YET*
 *
 *
 *#######################################*/
 
 .experience {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 2%;
 }
 
 .star {
@@ -236,7 +278,7 @@ span.lb-caption {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 ul {
@@ -250,24 +292,26 @@ ul li {
 /*#######################################
 *
 *
-*             Contact
+*             Contact *NOT RESPONSIVE YET*
 *
 *
 *#######################################*/
 
 #letter {
-  width: 175px;
+  max-width: 175px;
+  width: 100%;
   float: right;
   padding-right: 200px;
 
 }
 .contact-section {
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .kelly-contact div {
-  margin: 10px;
+  margin: 10px 1%;
 }
 
 .label_input_wrap {
@@ -278,8 +322,8 @@ ul li {
 .kelly-contact input,
 .kelly-contact textarea {
   border: 3px solid #CC9933;
-  padding: 9px 11px;
-  font-size: 14px;
+  padding: 9px 1.1%;
+  font-size: .875rem;
 }
 
 .submit input {
@@ -287,12 +331,12 @@ ul li {
   color: white;
   font-family: 'Monserrat', sans-serif;
   font-weight: bold;
-  font-size: 14px;
+  font-size: .875rem;
   border: none;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  padding: 10px 30px;
+  padding: 10px 3%;
 }
 
 /*#######################################
@@ -304,34 +348,300 @@ ul li {
 *#######################################*/
 
 footer {
+  clear: both;
   text-align: right;
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  padding: 10px 20px 10px 0;
+  right: 1%;
+  bottom: 1%;
+  padding: 1% 2% 1% 0;
+  margin: 0 9%;
 }
 
 .contact-footer {
-  display: block;
-  text-align: right;
-  padding-bottom: 10px;
-  padding-right: 10px;
+  /* display: block; */
+  /* text-align: right; */
+  padding-right: 1.4%;
+  margin-left: 56%;
+  margin-bottom: 10px;
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-family: 'Monsterrat', sans-serif;
+  max-width: 100px;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .contact-footer:hover {
   color: #333;
   font-weight: bold;
-  border: 2px solid #333;
-  box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
-  -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
-  -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
 }
 
 footer img{
   height: 50px;
+  padding-top: 7px;
 }
+
+/*************START 434 MEDIA QUERY *******************/
+
+@media (min-width: 434px) {
+
+    .contact-footer {
+      margin-left: 63%;
+    }
+
+}
+
+/*************END 434 MEDIA QUERY *******************/
+
+/*************START 500 MEDIA QUERY *******************/
+
+@media (min-width: 500px) {
+
+    .container {
+      padding-top: 50%;
+    }
+
+    .contact-footer {
+      margin-left: 65%;
+    }
+  }
+
+
+/*************END 500 MEDIA QUERY *******************/
+
+/*************IN BETWEEN 505-520 MEDIA QUERY *******************/
+@media (min-width: 505px) and (max-width: 520px) {
+
+header img {
+    padding: 0 5px;
+  }
+}
+/*************IN BETWEEN 505-520 MEDIA QUERY *******************/
+
+/*************START 520 MEDIA QUERY *******************/
+
+@media (min-width: 520px) {
+
+    .hamburger {
+      margin: 0 auto;
+      display: block;
+    }
+    .cross {
+      margin: 0 auto;
+      display: block;
+    }
+
+    .container2 {
+      padding-top: 47%;
+    }
+
+    footer {
+      margin: 0 15%;
+    }
+
+}
+
+/*************END 520 MEDIA QUERY *******************/
+
+/*************START 615 MEDIA QUERY *******************/
+
+@media (min-width: 615px) {
+
+    .hamburger {
+      display: none;
+    }
+    .cross {
+      display: none;
+    }
+
+    .desktop-menu {
+      display: inline-block;
+      width: 100%;
+    }
+
+    header ul li a:hover {
+      box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+      -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+      -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+    }
+
+    .container {
+      padding-top: 40%;
+    }
+
+    .container2 {
+      padding-top: 35%;
+    }
+
+    h1 {
+      text-align: left;
+    }
+
+    #homekelly {
+      width: 300px;
+      float: right;
+      margin: 4px 20px 4px 10px;
+      border: 3px solid #CC9933;
+    }
+
+    .homeintro {
+    	float: none;
+    }
+
+    .about-photo {
+      float: right;
+    }
+
+    footer {
+      margin: 0;
+    }
+
+    .contact-footer {
+      display: block;
+      text-align: right;
+      width: auto;
+      margin-left: 83%;
+    }
+
+    footer img {
+      padding-top: 0;
+    }
+
+    .contact-footer:hover {
+      box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+      -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+      -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+    }
+}
+
+/*************END 615 MEDIA QUERY *******************/
+
+/*************START 680 MEDIA QUERY *******************/
+
+@media (min-width: 680px) {
+
+    header {
+      padding: .5% 6%;
+    }
+
+    .container {
+      padding-top: 33%;
+    }
+
+    .container2 {
+      padding-top: 33%;
+    }
+
+    .contact-footer {
+      margin-left: 84.9%;
+    }
+
+}
+
+/*************END 680 MEDIA QUERY *******************/
+
+/*************START 800 MEDIA QUERY *******************/
+
+@media (min-width: 800px) {
+
+    header {
+      padding: .5% 7%;
+    }
+
+    .container {
+      padding-top: 30%;
+    }
+
+    .container2 {
+      padding-top: 35%;
+    }
+
+    .about-main {
+      width: 77%;
+      float: right;
+    }
+
+    .contact-footer {
+      margin-left: 87.9%;
+    }
+
+}
+
+/*************END 800 MEDIA QUERY *******************/
+
+/*************START 900 MEDIA QUERY *******************/
+
+@media (min-width: 900px) {
+
+    header {
+      padding: .5% 8%;
+    }
+
+    .container {
+      padding-top: 25%;
+    }
+
+    .container2 {
+      padding-top: 30%;
+    }
+
+    .contact-footer {
+      margin-left: 89%;
+    }
+
+}
+
+/*************END 900 MEDIA QUERY *******************/
+
+/*************START 1080 MEDIA QUERY *******************/
+
+@media (min-width: 1080px) {
+
+    header {
+      padding: .5% 9%;
+    }
+
+    .container {
+      padding-top: 22%;
+    }
+
+    .container2 {
+      padding-top: 26%;
+    }
+
+    .about-college {
+      padding-top: 35%;
+    }
+
+    .contact-footer {
+      margin-left: 91%;
+    }
+
+}
+
+/*************END 1080 MEDIA QUERY *******************/
+
+/*************START 1200 MEDIA QUERY *******************/
+
+@media (min-width: 1200px) {
+
+    header {
+      padding: .5% 10%;
+    }
+
+    .container {
+      padding-top: 19%;
+    }
+
+    .container {
+      padding-top: 19%;
+    }
+
+    .contact-footer {
+      margin-left: 92.33%;
+    }
+
+}
+
+/*************END 1200 MEDIA QUERY *******************/
