@@ -100,7 +100,7 @@ header {
   left: 0;
   right: 0;
   max-width: 600px;
-  padding: 10px 4.167%;
+  padding: 10px 2.167%;
   background-image: url("../images/background.png");
   background-color: #FFCCCC;
   background-attachment: fixed;
@@ -298,18 +298,19 @@ ul li {
 /*#######################################
 *
 *
-*             Contact *NOT RESPONSIVE YET*
+*             Contact
 *
 *
 *#######################################*/
 
-#letter {
-  max-width: 175px;
-  width: 100%;
-  float: right;
-  padding-right: 200px;
 
-}
+#letter {
+    max-width: 175px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
 .contact-section {
   max-width: 600px;
   width: 100%;
@@ -318,6 +319,7 @@ ul li {
 
 .kelly-contact div {
   margin: 10px 1%;
+  padding: 0px 3%;
 }
 
 .label_input_wrap {
@@ -332,6 +334,11 @@ ul li {
   font-size: .875rem;
 }
 
+.kelly-contact textarea {
+  max-width: 600px;
+  width: 90%;
+}
+
 .submit input {
   background: #CC9933;
   color: white;
@@ -342,7 +349,7 @@ ul li {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  padding: 10px 3%;
+  padding: 10px 10%;
 }
 
 /*#######################################
@@ -378,9 +385,13 @@ footer {
   white-space: nowrap;
 }
 
+
 .contact-footer:hover {
   color: #333;
   font-weight: bold;
+  box-shadow: 0 5px 0 0 rgba(0,0,0,.25);
+  -webkit-box-shadow: 0 5px 0 0 rgba(0,0,0,.25);
+  -moz-box-shadow: 0 5px 0 0 rgba(0,0,0,.25);
 }
 
 footer img{
@@ -408,9 +419,14 @@ footer img{
       padding-top: 50%;
     }
 
+    .submit input {
+      padding: 10px 7%;
+    }
+
     .contact-footer {
       margin-left: 65%;
     }
+
   }
 
 
@@ -420,7 +436,7 @@ footer img{
 @media (min-width: 505px) and (max-width: 520px) {
 
 header img {
-    padding: 0 5px;
+    padding: 0 6px;
   }
 }
 /*************IN BETWEEN 505-520 MEDIA QUERY *******************/
@@ -467,9 +483,9 @@ header img {
     }
 
     header ul li a:hover {
-      box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
-      -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
-      -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+      box-shadow: 0 5px 0 0 rgba(0,0,0,.25);
+      -webkit-box-shadow: 0 5px 0 0 rgba(0,0,0,.25);
+      -moz-box-shadow: 0 5px 0 0 rgba(0,0,0,.25);
     }
 
     .container {
@@ -499,6 +515,11 @@ header img {
       float: right;
     }
 
+    #letter {
+      float: right;
+      padding-right: 200px;
+    }
+
     footer {
       margin: 0;
     }
@@ -514,21 +535,26 @@ header img {
       padding-top: 0;
     }
 
-    .contact-footer:hover {
-      box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
-      -webkit-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
-      -moz-box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
-    }
 }
 
 /*************END 615 MEDIA QUERY *******************/
+
+/*************START 650 MEDIA QUERY *******************/
+@media (min-width: 650px) {
+
+  header {
+    padding: 10px 3.767%;
+  }
+
+}
+/*************END 650 MEDIA QUERY *******************/
 
 /*************START 680 MEDIA QUERY *******************/
 
 @media (min-width: 680px) {
 
     header {
-      padding: .5% 6%;
+      padding: .5% 7.5%;
     }
 
     .container {
@@ -546,6 +572,17 @@ header img {
 }
 
 /*************END 680 MEDIA QUERY *******************/
+
+/*************START 737 MEDIA QUERY *******************/
+
+@media (min-width: 730px) {
+
+    header {
+      padding: .5% 10.5%;
+    }
+}
+/*************END 680 MEDIA QUERY *******************/
+
 
 /*************START 800 MEDIA QUERY *******************/
 
@@ -565,7 +602,11 @@ header img {
 
     .about-main {
       width: 77%;
-      float: right;
+      margin: 0 auto;
+    }
+
+    .submit input {
+      padding: 10px 10%;
     }
 
     .contact-footer {
@@ -581,7 +622,7 @@ header img {
 @media (min-width: 900px) {
 
     header {
-      padding: .5% 8%;
+      padding: .5% 10%;
     }
 
     .container {
@@ -605,7 +646,7 @@ header img {
 @media (min-width: 1080px) {
 
     header {
-      padding: .5% 9%;
+      padding: .5% 12%;
     }
 
     .container {
@@ -633,7 +674,7 @@ header img {
 @media (min-width: 1200px) {
 
     header {
-      padding: .5% 10%;
+      padding: .5% 18%;
     }
 
     .container {
