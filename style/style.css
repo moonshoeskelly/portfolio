@@ -263,14 +263,18 @@ span.lb-caption {
 /*#######################################
 *
 *
-*             Resume *NOT RESPONSIVE YET*
+*             Resume
 *
 *
 *#######################################*/
 
+.categories {
+  text-align: center;
+}
+
 .experience {
   display: inline-block;
-  padding: 0px 2%;
+  padding: 0px 2% 30px 2%;
 }
 
 .star {
