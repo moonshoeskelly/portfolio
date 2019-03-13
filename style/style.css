@@ -242,9 +242,11 @@ aside {
 }
 
 .gallery img {
-  height: 295px;
+  height: 300px;
+  width: 200px;
   margin: 10px 1%;
   border: 3px solid #CC9933;
+  object-fit: cover;
 }
 
 span.lb-caption {
