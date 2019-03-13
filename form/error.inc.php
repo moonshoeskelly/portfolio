@@ -500,5 +500,3 @@ header img {
   </div>
 </footer>
 <script src="scripts/hamburger.js"></script>
-<script src="js/backstretch.js"></script>
-<script src="js/main.js"></script>

@@ -20,14 +20,25 @@
     <!-- FAVIcon-->
     <link rel="icon" type="image/ico" href="images/favicon.ico" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/jquery.iMissYou.js"></script>
+    <script>
+        jQuery(document).ready(function($){
+            $.iMissYou({
+                title: "I Miss you!",
+                favicon: {
+                    enabled: true,
+                    src:'images/iMissYouFavicon.ico'
+                }
+            });
+        });
+    </script>
 
     <!-- CSS -->
     <link href="style/style.css" rel="stylesheet" type="text/css" />
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Monserrat%7CGrand+Hotel" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Scripts
     <script src="scripts/script.js" type="text/javascript"></script>
@@ -36,6 +47,7 @@
   </head>
 
   <body>
+    <script>document.body.className = 'fade';</script>
     <header>
       <img class="logo" src="images/cklogo-rect2.svg" alt="Home Logo" title="Clever Kelly Logo" />
 
@@ -83,8 +95,11 @@
         <a href="https://twitter.com/moonshoeskelly" target="_blank"><img src="images/twitter-rounded.png" alt="twitter" title="twitter" /></a>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(e) {
+        document.body.className = '';
+      });
+    </script>
     <script src="scripts/hamburger.js"></script>
-    <script src="js/backstretch.js"></script>
-		<script src="js/main.js"></script>
   </body>
 </html>
